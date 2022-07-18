@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/fragmentPokedexList">
+
+    <fragment
+        android:id="@+id/fragmentPokedexList"
+        android:name="com.example.pokeapi.presentation.pokemoninfo.PokedexListFragment"
+        tools:layout="@layout/fragment_pokedex_list">
+        <action
+            android:id="@+id/fragmentPokedexList_to_fragmentPokemonDetails"
+            app:destination="@id/fragmentPokemonDetails" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentPokemonDetails"
+        android:name="com.example.pokeapi.presentation.pokemoninfo.PokemonDetailsFragment"
+        tools:layout="@layout/fragment_pokemon_details" />
+</navigation>

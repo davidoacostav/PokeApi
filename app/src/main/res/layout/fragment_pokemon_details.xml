@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/pokemonIv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/pokemonNameTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/pokemonNameTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textAppearance="?textAppearanceHeadline4"
+        app:layout_constraintBottom_toTopOf="@id/pokemonNumberTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pokemonIv"
+        app:layout_constraintWidth_percent=".6" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/pokemonNumberTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textAppearance="?textAppearanceHeadline4"
+        app:layout_constraintBottom_toTopOf="@id/pokemonTypesTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pokemonNameTv"
+        app:layout_constraintWidth_percent=".6" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/pokemonTypesTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textAppearance="?textAppearanceHeadline4"
+        app:layout_constraintBottom_toTopOf="@id/pokemonHeightTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pokemonNumberTv"
+        app:layout_constraintWidth_percent=".6" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/pokemonHeightTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textAppearance="?textAppearanceHeadline4"
+        app:layout_constraintBottom_toTopOf="@id/pokemonWeightTv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pokemonTypesTv"
+        app:layout_constraintWidth_percent=".6" />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/pokemonWeightTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textAppearance="?textAppearanceHeadline4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pokemonHeightTv"
+        app:layout_constraintWidth_percent=".6" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
